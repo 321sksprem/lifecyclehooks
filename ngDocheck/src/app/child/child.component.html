@@ -1,1 +1,11 @@
-<p>child works!</p>
+<p>child ParentData</p>
+<p>{{parentData.count}}</p>
+
+<span *ngIf="diff !== undefined && diff !== ''; else #ngdiff">
+  {{diff}}
+
+</span>
+<ng-template #ngdiff>
+
+  <span>No Data</span>
+</ng-template>
